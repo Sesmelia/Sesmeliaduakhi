@@ -1,0 +1,242 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 15px;
+  }
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .layar-atas {
+    width: 1000px;
+    margin: auto;
+  }
+  .layar-penuh {
+    width: 100%;
+  }
+  nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #b1b1b1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+  }
+  nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+  }
+  nav .logo b {
+    font-family: "Montez", sans-serif;
+    color: black;
+    font-size: 25px;
+    vertical-align: middle;
+  }
+  nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+  }
+  nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 60px;
+  }
+  nav ul li a {
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+  }
+  header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+  }
+  header .intro {
+    z-index: 100;
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 50%;
+  }
+  header .intro b{
+    font-family: "Montez", sans-serif;
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+    color: #423839;
+    text-shadow: 7px 7px 7px #FEFBF6;
+  }
+  header .intro p{
+    font-size: 20px;
+    margin: 0;
+    padding-top: 40px;
+    font-style: italic;
+    text-shadow: 7px 7px 7px #FEFBF6
+  }
+  .tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+  }
+  .tombol-menu .garis {
+    height: 3px;
+    background-color: #423839;
+  }
+  section {
+    padding: 50px 0px 50px 0px;
+  }
+  h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  h3::after {
+    content: "";
+    border-bottom: 5px solid #423839;
+    width: 52px;
+    display: block;
+    margin: 20px auto;
+  }
+  #aboutus, #recipes, #comment, #contact{
+    text-align: center;
+  }
+  section .konten p {
+    font-style: normal;
+    text-align: center;
+  }
+  nav.scroll{
+    background-color: #FEFBF6;
+  }
+  section.cream{
+    background-color: #F3F0D7;
+  }
+  .recipes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .recipes h6{
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+  }
+  .recipes img {
+    width: 200px;
+  }
+  section.resep{
+    padding: 50px 175px 50px 175px;
+  }
+  .resep h4{
+    text-align: center;
+    font-size: 25px;
+  }
+  .resep img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30px;
+  }
+  footer {
+    padding: 0px 0px 50px 0px;
+    background-color: #343a40;
+    color: #fff;
+  }
+  footer .copyright {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+  }
+  .form_box{
+    margin-top: 0px;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    border-radius: 10px;
+    background-color: #E6DDC4;
+  }
+  .container{
+    padding: 5px;
+    margin: 10%;
+  }
+  .container form{
+    position: relative;
+  }
+  table{
+    margin: auto;
+    padding-bottom: 1px;
+    color: #000;
+  }
+  table td{
+    padding: 5px;
+    color: black;
+  }
+  button{
+    width: 70px;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    background-color: whitesmoke;
+    border-radius: 7px;
+  }
+  
+  @media screen and (max-width: 991.98px) {
+    .layar-atas {
+      width: 90%;
+    }
+    nav .menu ul {
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    nav .menu ul li {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      background-color: #FEFBF6;
+      line-height: 40px;
+    }
+    nav .menu ul li a {
+      color: #423839;
+    }
+    .tombol-menu {
+      display: flex;
+    }
+  }
